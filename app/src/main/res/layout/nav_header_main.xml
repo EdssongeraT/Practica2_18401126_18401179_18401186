@@ -27,6 +27,7 @@
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         android:text="Tangram"
         android:textStyle="bold|italic"
+        android:textSize="20dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <TextView
