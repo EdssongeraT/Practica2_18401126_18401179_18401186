@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import mx.edu.ittepic.tangram_18401126_18401179_18401186.databinding.FragmentGalleryBinding
+import mx.edu.ittepic.tangram_18401126_18401179_18401186.ui.LienzoTangram
 
 class GalleryFragment : Fragment() {
 
@@ -23,15 +24,10 @@ class GalleryFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val galleryViewModel =
-            ViewModelProvider(this).get(GalleryViewModel::class.java)
+            ViewModelProvider(LienzoTangram(this)).get(GalleryViewModel::class.java)
 
         _binding = FragmentGalleryBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
-        val textView: TextView = binding.textGallery
-        galleryViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
         return root
     }
 
