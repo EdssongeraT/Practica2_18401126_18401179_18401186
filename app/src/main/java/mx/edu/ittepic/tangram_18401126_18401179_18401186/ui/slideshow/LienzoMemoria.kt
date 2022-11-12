@@ -9,8 +9,7 @@ import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import mx.edu.ittepic.tangram_18401126_18401179_18401186.R
-import mx.edu.ittepic.tangram_18401126_18401179_18401186.ui.gallery.GalleryFragment
-import kotlin.system.measureNanoTime
+
 
 class LienzoMemoria(p: SlideshowFragment):View(p.context) {
     var fondo = BitmapFactory.decodeResource(resources, R.drawable.fondo)
