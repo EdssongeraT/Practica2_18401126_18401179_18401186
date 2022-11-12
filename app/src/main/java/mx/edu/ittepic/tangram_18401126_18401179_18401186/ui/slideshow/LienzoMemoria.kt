@@ -4,7 +4,6 @@ import android.graphics.*
 import android.view.MotionEvent
 import android.view.View
 import mx.edu.ittepic.tangram_18401126_18401179_18401186.R
-import mx.edu.ittepic.tangram_18401126_18401179_18401186.ui.gallery.GalleryFragment
 
 class LienzoMemoria(p: SlideshowFragment):View(p.context) {
     var fondo = BitmapFactory.decodeResource(resources, R.drawable.fondo)
