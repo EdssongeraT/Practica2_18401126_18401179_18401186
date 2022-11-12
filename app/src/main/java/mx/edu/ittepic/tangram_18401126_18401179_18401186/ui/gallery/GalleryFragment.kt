@@ -24,7 +24,7 @@ class GalleryFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val galleryViewModel =
-            ViewModelProvider(LienzoTangram(this)).get(GalleryViewModel::class.java)
+            ViewModelProvider(this).get(GalleryViewModel::class.java)
 
         _binding = FragmentGalleryBinding.inflate(inflater, container, false)
         val root: View = binding.root
