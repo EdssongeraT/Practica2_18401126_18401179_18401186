@@ -9,7 +9,6 @@ import mx.edu.ittepic.tangram_18401126_18401179_18401186.ui.gallery.GalleryFragm
 
 class LienzoTangram(p: GalleryFragment): View(p.context)  {
     var fondo = BitmapFactory.decodeResource(resources, R.drawable.fondos)
-    var bandera=0
     var primeropunto = FiguraTangram(this,R.drawable.equisnegra,100f,450f)
     var segundopunto = FiguraTangram(this,R.drawable.equisnegra,100f,850f)
     var tercerpunto = FiguraTangram(this,R.drawable.equisnegra,320f,200f)
